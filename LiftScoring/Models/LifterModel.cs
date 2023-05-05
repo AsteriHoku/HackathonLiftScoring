@@ -1,6 +1,9 @@
-﻿namespace LiftScoring.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LiftScoring.Models;
 public class LifterModel
 {
+    [Key]
     public int Id { get; set; }
     public string Name { get; set; }
     public bool isFemale { get; set; }

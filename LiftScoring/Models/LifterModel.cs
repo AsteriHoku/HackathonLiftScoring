@@ -1,6 +1,7 @@
 ﻿namespace LiftScoring.Models;
 public class LifterModel
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public bool isFemale { get; set; }
     public double DeadLift { get; set; }

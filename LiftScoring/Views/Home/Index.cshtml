@@ -1,0 +1,79 @@
+﻿@model LifterModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+<!-- Row 1 -->
+  <div class="container-fluid bg-light p-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Lift Scoring</h1>
+        <p>Compete with yourself, friends, or colleagues.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="container my-5 text-center">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Deadlift</h5>
+            <p class="card-text">@Model.DeadLift</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Squat</h5>
+            <p class="card-text">@Model.SquatLift</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Bench</h5>
+            <p class="card-text">@Model.BenchLift</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="container my-5 text-center">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">OverheadPress</h5>
+            <p class="card-text">@Model.OverheadPressLift</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Curl</h5>
+            <p class="card-text">@Model.CurlLift</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Row</h5>
+            <p class="card-text">@Model.RowLift</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

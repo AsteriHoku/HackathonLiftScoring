@@ -8,5 +8,12 @@ namespace LiftScoring.Controllers
         {
             return View();
         }
+
+        public async Task<double> GetScoreByGenderAsync(double liftWeight, bool isFemale)
+        {
+            var score = isFemale ? (liftWeight * 1.8) : liftWeight;
+            return score;
+        }
     }
+}
 }
